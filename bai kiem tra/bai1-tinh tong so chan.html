@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	//Chỉ làm được phần tính tổng số chẵn. Còn các phần khác thì chịu....
+	<script type="text/javascript">
+		function sumPositiveEvenNumbers(arr) {
+  // Lọc các số chẵn trong mảng
+  const soChan = arr.filter(num => num % 2 === 0);
+  
+  // Tính tổng các số chẵn
+  const tong = soChan.reduce((tong, num) => tong + num, 0);
+  
+  return tong;
+}
+	const arr = [1,2,3,4,5,6];
+	console.log(sumPositiveEvenNumbers(arr));
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function inputArrayPhone() {
+			const numberPhones = parseInt(prompt("Nhập Số Lượng Điện Thoại"));
+			const listPhones = [];
+		for(i = 0; i < numberPhones; i ++){
+			const phones = {
+				Code: prompt(`Nhập mã điện thoại:${i + 1}`),
+				Name: prompt(`Nhập tên điện thoại:${i + 1}`),
+				manufacturer: prompt(`Nhập hãng điện thoại: ${i + 1}`),
+				Price:parseFloat(prompt(`Nhập Giá điện thoại:${i + 1}`))
+			};
+			listPhones.push(phones);
+		}
+		return listPhones;
+   }
+   const phones = inputArrayPhone();
+   console.log(phones);
+	</script>
+</body>
+</html>
